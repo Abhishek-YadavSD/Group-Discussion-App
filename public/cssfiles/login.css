@@ -1,0 +1,62 @@
+.emailpassinput {
+    padding: 0.375rem 0.75rem;
+    border-style: none;
+    border: 0px solid;
+    outline: 0;
+    /* background-color: black */
+}
+
+.boxset {
+    margin-top: 13%
+}
+
+.emailpassinput:active {
+    border-style: none;
+}
+
+
+.emailpassinput:hover {
+    border-style: none;
+}
+
+.forgotpass {
+    text-decoration: none;
+}
+
+.forgotpass:hover {
+    text-decoration: underline;
+}
+
+.modalbg {
+    background-color: #323338;
+}
+
+.textclr {
+    color: #999ca1
+}
+
+.weltestclr {
+    color: #eeeff1
+}
+
+.emailpassclr {
+    color: #a9acb3;
+}
+
+.laptop-view {
+    /* display: none; */
+}
+
+.mobile-form {
+    display: none;
+}
+
+@media all and (max-width: 550px) {
+    .laptop-view {
+        display: none;
+    }
+
+    .mobile-form {
+        display: block;
+    }
+}
