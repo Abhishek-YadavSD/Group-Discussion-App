@@ -1,5 +1,4 @@
-<html>
-    <link rel="stylesheet" href="../public/css/home.css">
+
 <body>
    
     <nav class="d-flex">
@@ -12,4 +11,4 @@
         </ul>
     </nav>
 </body>
-</html>
+
