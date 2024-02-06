@@ -1,5 +1,5 @@
 
-<body>
+
    
     <nav class="d-flex">
         <ul>
@@ -10,5 +10,5 @@
             <li><a href="/debate">Debate</a></li>
         </ul>
     </nav>
-</body>
+
 
