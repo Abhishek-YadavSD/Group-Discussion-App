@@ -66,6 +66,10 @@
     background-size: cover;
     height: 100vh;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
 /* .reg-view{
     display: none;
 } */
