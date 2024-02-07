@@ -28,7 +28,7 @@
 }
 
 .modalbg {
-    background-color: #323338;
+    background-color: #323338d2;
 }
 
 .textclr {
@@ -45,8 +45,14 @@
 
 .laptop-view {
     /* display: none; */
-}
+    /* background-image: url("{{ asset('../img/4876388.jpg') }}"); */
+    /* background-size : cover; */
 
+}
+.background{
+    background-image: url("../img/photo-1519389950473-47ba0277781c.avif");
+    /* background-size : cover; */
+}
 .mobile-form {
     display: none;
 }
