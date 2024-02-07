@@ -39,7 +39,7 @@
                                 <button class="btn btn-primary rounded-0 " type="button">Log In</button>
                                 <div class="d-flex ">
                                     <span class="textclr">Need an account?</span><span>
-                                        <a href="#" onclick="register()" class=" forgotpass ms-1">Register</a></span>
+                                        <a onclick="register()" class=" forgotpass ms-1">Register</a></span>
                                 </div>
                             </div>
                         </form>
@@ -47,40 +47,69 @@
                 </div>
             </div>
 
-            <div class="w-50  ms-auto me-auto reg-view d-none" id="register1">
+            <div class="w-50  ms-auto me-auto reg-view d-none h-100 overflow-scroll" id="register1">
                 <div class=" modalbg border rounded  " id="">
                     <div class="mt-4">
                         <h1 class=" fs-5 text-center weltestclr" id="exampleModalLabel">Create an account</h1>
                     </div>
                     <div class="px-4">
-                        <form class="form" autocomplete="off">
+                        <form action="{{ url('/registe') }}" method="post" >
+                            @csrf
+
                             <div class="mb-3">
                                 <label for="" class="form-label emailpassclr">EMAIL</label>
-                                <input type="email" class="w-100 emailpassinput" id="exampleInputEmail1">
-                                <div class="form-text textclr">We'll never share your email with anyone
+                                <input type="email" name="email" class="w-100 emailpassinput" id="exampleInputEmail1">
+                                {{-- <div class="form-text textclr">We'll never share your email with anyone
                                     else.
-                                </div>
+                                </div> --}}
+                                <span class="text-danger">
+                                    @error('email')
+                                        {{ $message }}
+                                    @enderror
+                                </span>
                             </div>
 
                             <div class="mb-3">
                                 <label for="" class="form-label emailpassclr">DISPLAY NAME</label>
-                                <input type="text" class="w-100 emailpassinput" id="exampleInputEmail1">
+                                <input type="text" name="name" class="w-100 emailpassinput" id="exampleInputEmail1">
+                                <span class="text-danger">
+                                    @error('name')
+                                        {{ $message }}
+                                    @enderror
+                                </span>
                             </div>
 
                             <div class="mb-3">
                                 <label for="" class="form-label emailpassclr">USERNAME</label>
                                 <input type="text" class="w-100 emailpassinput" id="exampleInputEmail1">
-
                             </div>
 
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label emailpassclr">Password</label>
-                                <input type="password" class="w-100 emailpassinput">
+                                <input type="password" name="password_confirmation" class="w-100 emailpassinput" autocomplete="off">
+                                <span class="text-danger">
+                                    @error('password_confirmation')
+                                        {{ $message }}
+                                    @enderror
+                                </span>
                                 <a href="" class=" forgotpass">Forgot your password?</a>
                             </div>
 
+                            <div class="mb-3">
+                                <label for="" class="form-label emailpassclr">PASSWORD</label>
+                                <input type="password" name="password" class="w-100 emailpassinput" id="exampleInputEmail1">
+                                {{-- <div class="form-text textclr">We'll never share your email with anyone
+                                    else.
+                                </div> --}}
+                                <span class="text-danger">
+                                    @error('password')
+                                        {{ $message }}
+                                    @enderror
+                                </span>
+                            </div>
+
                             <div class="d-grid gap-2 col-12 mx-auto mb-4 ">
-                                <button class="btn btn-primary rounded-0 " type="button">Continue</button>
+                                <button class="btn btn-primary rounded-0 " type="submit">Continue</button>
                                 <div class="d-flex ">
                                     <a href="" class=" forgotpass ms-1">Already have an
                                         account</a></span>
@@ -130,9 +159,9 @@
 @section('contentOfScript')
     <script>
         function register() {
-                $(".modalbgid").addClass("d-none")
-                $(".reg-view").removeClass("d-none")
-            }
+            $(".modalbgid").addClass("d-none")
+            $(".reg-view").removeClass("d-none")
+        }
     </script>
 @endsection
 @endsection
