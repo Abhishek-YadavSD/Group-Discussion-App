@@ -26,7 +26,9 @@
 }
 
 
-
+a{
+    text-decoration: none;
+}
 
 html, body{
     height: 100vh;
@@ -73,7 +75,7 @@ body{
     }
     
 
-#main  nav ul li{
+#main  nav ul a{
     margin: 8%;
     color:var(--white);
 }
@@ -106,7 +108,7 @@ body{
     }
     
 
-#main  nav ul li{
+#main  nav ul a{
     margin: 13%;
     color:var(--white);
 }
@@ -134,7 +136,7 @@ body{
 
 
 
-#main  nav ul li:hover{
+#main  nav ul a:hover{
     cursor :pointer;
 }
 
@@ -157,7 +159,9 @@ body{
 #sign-nav div{
     cursor :pointer;
 }
-
+#sign-nav div a{
+    color: var(--white);
+}
 
 #signup{
     width: 100px;
@@ -208,7 +212,7 @@ body{
     cursor: pointer;
 }
 
-#social-icons{
+/* #social-icons{
     grid-area:social;
   display: flex;
   flex-direction: row;
@@ -219,7 +223,7 @@ body{
 margin: 10px;
 mix-blend-mode: difference;
 filter: hue-rotate(210deg);
-}
+} */
 /* fot the footer below section */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{

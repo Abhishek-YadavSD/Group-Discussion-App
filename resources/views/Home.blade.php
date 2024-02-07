@@ -17,18 +17,18 @@
          <div id="logo">Logo</div>
          <nav>
              <ul>
-                 <li>Home</li>
-                 <li>Groups</li>
-                 <li>Knowladge</li>
-                 <li>Debate</li>
+                 <a href="/">Home</a>
+                 <a href="/groups">Groups</a>
+                 <a href="/knowladge">Knowladge</a>
+                 <a href="/debate">Debate</a>
              </ul>
          </nav>
          <div id="sign-nav">
              <div id="signin">
-                 Login
+                 <a href="/login">Login</a>
              </div>
              <div id="signup">
-                 Sign up
+                 <a href="/login">Sign up</a>
              </div>
          </div>
  
@@ -47,15 +47,15 @@
                      Get started
                  </div>
          </div>
-         <div id="social-icons">
+         {{-- <div id="social-icons">
          
-                 {{-- <img src="assets/google.png" alt="G" height="36" width="36">
+                 <img src="assets/google.png" alt="G" height="36" width="36">
                  <img src="assets/facebook.png" alt="f" height="36" width="36">
                  <img src="assets/instagram.png" alt="i" height="36" width="36">
                  <img src="assets/twitter.png" alt="t" height="36" width="36">
                  <img src="assets/linkedin.png" alt="l" height="36" width="36">
-      --}}
-             </div>
+     
+             </div> --}}
  
          
          
