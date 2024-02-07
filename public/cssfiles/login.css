@@ -1,4 +1,7 @@
-.emailpassinput {
+*{
+    margin: 0;
+    padding: 0;
+}.emailpassinput {
     padding: 0.375rem 0.75rem;
     border-style: none;
     border: 0px solid;
@@ -43,19 +46,29 @@
     color: #a9acb3;
 }
 
-.laptop-view {
-    /* display: none; */
-    /* background-image: url("{{ asset('../img/4876388.jpg') }}"); */
-    /* background-size : cover; */
+.laptopview {
+    display: grid;
+    place-items: center;
 
 }
 .background{
     background-image: url("../img/photo-1519389950473-47ba0277781c.avif");
-    /* background-size : cover; */
+    background-size : cover;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 .mobile-form {
     display: none;
 }
+.phone-view-bg{
+    background-image: url("https://images.unsplash.com/photo-1565689157206-0fddef7589a2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/* .reg-view{
+    display: none;
+} */
 
 @media all and (max-width: 550px) {
     .laptop-view {
