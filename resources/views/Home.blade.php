@@ -24,11 +24,8 @@
              </ul>
          </nav>
          <div id="sign-nav">
-             <div id="signin">
-                 <a href="/login">Login</a>
-             </div>
              <div id="signup">
-                 <a href="/login">Sign up</a>
+                 <a href="/login">join</a>
              </div>
          </div>
  
