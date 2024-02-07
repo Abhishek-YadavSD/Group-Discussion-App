@@ -6,7 +6,6 @@
 }
 html, body {
   margin: 0;
-  background: black;
   font-family: 'Montserrat', helvetica, arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -179,7 +178,7 @@ html, body {
     grid-template-columns: 80% 20%;
 }
 .wrap1,.wrap2{
-    height: 100vh;
+    height: 90vh;
     overflow-y: scroll;
 }
 .wrap2>*{
@@ -191,6 +190,7 @@ html, body {
     display: none;
 }
 </style>
+@include('layout.navbar')
 <div class="wrapper">
 <div class="wrap1">
     <div class="movie_card" id="bright">

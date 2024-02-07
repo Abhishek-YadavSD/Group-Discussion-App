@@ -292,6 +292,9 @@ a, a:hover {
 .card-cont-shortc{
     margin: 3% 0 0 0;
 }
+.card-cont-shortc>.align-middle>*{
+  margin: 2% 0;
+}
 .gr-1 {
     background: linear-gradient(170deg, #01E4F8 0%, #1D3EDE 100%);
   }

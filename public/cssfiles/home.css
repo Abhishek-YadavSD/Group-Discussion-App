@@ -42,46 +42,12 @@ body{
     color:var(--cl);
     
 }
-#bg{
- 
-    -webkit-clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
-    background: #26282B;
-    
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    margin: 0;
-    z-index: -1;
-}
 
 
-@media (min-width:880px){
-
-    #main{
-        display: grid;
-        grid-template-columns:20% auto auto;
-        grid-template-rows: 15% auto auto;
-        justify-content: stretch;
-        align-items: center;
-        grid-template-areas: "logo menu sign"
-        "main main main" "social social social";
-    }
-
-    #social-icons{
-      justify-content: flex-end;
-      align-items: flex-end;
-    
-    }
-    
-
-#main  nav ul a{
-    margin: 8%;
-    color:var(--white);
-}
 
 
-}
+
+
 
 
 @media (max-width:880px){

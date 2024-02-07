@@ -1,4 +1,7 @@
 @extends('layout.main')
+{{-- below for navbar --}}
+@include('layout.navbar')
+{{-- above for navbar --}}
 @section('tittle')
     login
 @endsection

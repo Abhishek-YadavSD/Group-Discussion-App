@@ -12,7 +12,7 @@
 
 
 </style>
-
+@include('layout/navbar')
 <div class="grey-bg container-fluid">
   <section id="minimal-statistics">
     <div class="row">
@@ -346,3 +346,4 @@
   </div>
 </section>
 </div>
+@include('layout/footerbar')

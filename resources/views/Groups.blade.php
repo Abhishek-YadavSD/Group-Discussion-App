@@ -11,6 +11,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
+  {{-- for the navigation --}}
+  @include('layout.navbar')
     <h1 id="head">Groups To Join</h1>
    
     {{-- for small cards using bootstrap --}}
@@ -333,7 +335,8 @@
           
         </div>
       </div>
-      <div class="container card-cont-shortc h-100">
+      {{-- for the last 3 --}}
+      {{-- <div class="container card-cont-shortc h-100">
         <div class="row align-middle">
           <div class="col-md-6 col-lg-4 column">
             <div class="card gr-4">
@@ -372,10 +375,11 @@
               <i class="fa fa-empire"></i>
             </div>
             </div>
-          </div>
+          </div> --}}
           
         </div>
       </div>
     </div>
+    @include('layout/footerbar')
 </body>
 </html>
