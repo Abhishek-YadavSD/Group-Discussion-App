@@ -141,24 +141,24 @@ h2 {
 </style>
 @include('layout.navbar')
 
-<form method="GET" action="newuser/{name}" class="form">
+<div class="form">
 
     <input id="noaccount" name="radioaccount" type="radio" class="radio radio--invisible" checked />
     <input id="account" name="radioaccount" type="radio" class="radio radio--invisible"/>
     <div class="form_background">
-      <div class="form-group form-group--account">
+      <form method="GET" action="newuser/{name}" class="form-group form-group--account">
         <h3 class="form-group_title">Log in</h3>
+        <input class="form-group_input" name="NAME" type="email" placeholder="Email"/>
+        <input class="form-group_input" name="PASSWORD" type="password" placeholder="Password"/>
+        <button class="button button--form">Log in</button>
+      </form>
+      <form class="form-group form-group--noaccount">
+        <h3 class="form-group_title">Sign up</h3>
+        <input class="form-group_input"  type="text" placeholder="Full Name"/>
         <input class="form-group_input" type="email" placeholder="Email"/>
         <input class="form-group_input" type="password" placeholder="Password"/>
-        <button class="button button--form">Log in</button>
-      </div>
-      <div class="form-group form-group--noaccount">
-        <h3 class="form-group_title">Sign up</h3>
-        <input class="form-group_input" name="NAME" type="text" placeholder="Full Name"/>
-        <input class="form-group_input" name="NUMBER" type="email" placeholder="Email"/>
-        <input class="form-group_input" type="password" placeholder="Password"/>
         <button class="button button--form">Sign up</button>
-      </div>
+      </form>
     </div>
 
   <fieldset class="fieldset">
@@ -178,5 +178,5 @@ h2 {
     </div>
     <label for="account" class="button">login</label>
   </fieldset>
-</form>
+</div>
 

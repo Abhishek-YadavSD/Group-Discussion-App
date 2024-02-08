@@ -44,3 +44,6 @@ Route::get('/newuser/{name}', function($name) {
     return view('pages/userprofile');
 });
 // above for new user login/signup
+
+// below for redirecting if a route is changed use in
+// Route::redirect('/new name to search','/main route name to redirect');
