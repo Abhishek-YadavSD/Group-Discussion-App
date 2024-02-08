@@ -2,7 +2,9 @@
     nav {
 	margin: 10px auto 8px;
 
-	position: relative;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 	width: 590px;
 	height: 50px;
 	background-color: #34495e;
@@ -70,12 +72,12 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 	left: 470px;
 	background-color: #e67e22;
 }
-
+/* 
 body {
 	font-size: 12px;
 	font-family: sans-serif;
 	background: #2c3e50;
-}
+} */
 
 
 
