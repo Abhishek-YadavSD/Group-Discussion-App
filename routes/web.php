@@ -34,3 +34,13 @@ Route::get('/register', function () {
 });
 
 Route::post('/registe',[UserController::class,'registe']);
+
+
+
+Route::view('/newuser','/pages/newuser');
+
+// below for new user
+Route::get('/newuser/{name}', function($name) {
+    return view('pages/userprofile');
+});
+// above for new user login/signup
