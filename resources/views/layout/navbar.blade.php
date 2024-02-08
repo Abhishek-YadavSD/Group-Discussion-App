@@ -88,6 +88,6 @@ body {
 	<a class=".start-about" href="/groups">Groups</a>
 	<a class=".start-blog" href="/knowladge">knowladge</a>
 	<a class=".start-portefolio" href="/debate">Debate</a>
-	<a class=".start-contact" href="/login">Login</a>
+	<a class=".start-contact" href="/newuser">Login</a>
 	<div class="animation start-home">hello</div>
 </nav>

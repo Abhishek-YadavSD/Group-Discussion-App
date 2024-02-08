@@ -155,6 +155,7 @@ h2 {
 }
 
 </style>
+@include('layout.navbar')
 
 <form method="GET" action="newuser/{name}" class="form">
 
