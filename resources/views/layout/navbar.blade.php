@@ -84,10 +84,10 @@ body {
 
 </style>
 <nav>
-	<a class=".start-home" href="/">Home</a>
-	<a class=".start-about" href="/groups">Groups</a>
-	<a class=".start-blog" href="/knowladge">knowladge</a>
-	<a class=".start-portefolio" href="/debate">Debate</a>
-	<a class=".start-contact" href="/newuser">Login</a>
+	<a class=".start-home" href='{{route('home')}}'>Home</a>
+	<a class=".start-about" href='{{route('groups')}}'>Groups</a>
+	<a class=".start-blog" href='{{route('knowladge')}}'>knowladge</a>
+	<a class=".start-portefolio" href='{{route('debate')}}'>Debate</a>
+	<a class=".start-contact" href='{{route('newuser')}}'>Login</a>
 	<div class="animation start-home">hello</div>
 </nav>

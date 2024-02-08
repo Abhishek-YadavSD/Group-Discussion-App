@@ -16,31 +16,31 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('Home');
-});
+})->name('home');
+
 Route::get('/groups', function () {
     return view('Groups');
-});
+})->name('groups');
+
 Route::get('/knowladge', function () {
     return view('Knowladge');
-});
+})->name('knowladge');
+
 Route::get('/debate', function () {
     return view('debate');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/register', function () {
-    return view('login');
-});
+})->name('debate');
+// login not in used as replaced by newuserp page
+// Route::get('/login', function () {
+//     return "<h1>Hello it is working</h1>";
+// });
 
-Route::post('/registe',[UserController::class,'registe']);
-
-
-
-Route::view('/newuser','/pages/newuser');
+Route::view('/newuser','/pages/newuser')->name('newuser');
 
 // below for new user
 Route::get('/newuser/{name}', function($name) {
+    if ($name==null) {
+        return view("<h1>Name is not given</h1>");
+    }
     return view('pages/userprofile');
 });
 // above for new user login/signup
