@@ -1,20 +1,4 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    new user
-    <form method="GET" action="newuser/{name}">
-        <input type="name" name="NAME" id="" placeholder="Enter Name">
-        <input type="number" name="NUMBER" id="" placeholder="Enter Number">
-        <input type="submit" name="" id="" value="send">
-    </form>
-</body>
-</html> --}}
+
 <style>
     * {
   box-sizing: border-box;
