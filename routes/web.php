@@ -47,3 +47,9 @@ Route::get('/newuser/{name}', function($name) {
 
 // below for redirecting if a route is changed use in
 // Route::redirect('/new name to search','/main route name to redirect');
+
+
+// below for the routes which are unknown /not founded
+Route::fallback(function(){
+    return "<img src='https://freefrontend.com/assets/img/html-funny-404-pages/CodePen-404-Page.gif'>";
+});
