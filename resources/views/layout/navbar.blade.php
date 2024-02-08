@@ -76,24 +76,16 @@ body {
 	font-family: sans-serif;
 	background: #2c3e50;
 }
-/* h1 {
-	text-align: center;
-	margin: 40px 0 40px;
-	text-align: center;
-	font-size: 30px;
-	color: #ecf0f1;
-	text-shadow: 2px 2px 4px #000000;
-	font-family: 'Cherry Swash', cursive;
-} */
+
 
 
 
 </style>
 <nav>
-	<a href="/">Home</a>
-	<a href="/groups">Groups</a>
-	<a href="/knowladge">knowladge</a>
-	<a href="/debate">Debate</a>
-	<a href="/login">Login</a>
-	<div class="animation start-home"></div>
+	<a class=".start-home" href="/">Home</a>
+	<a class=".start-about" href="/groups">Groups</a>
+	<a class=".start-blog" href="/knowladge">knowladge</a>
+	<a class=".start-portefolio" href="/debate">Debate</a>
+	<a class=".start-contact" href="/login">Login</a>
+	<div class="animation start-home">hello</div>
 </nav>
