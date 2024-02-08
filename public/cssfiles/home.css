@@ -190,19 +190,6 @@ body{
     cursor: pointer;
 }
 
-/* #social-icons{
-    grid-area:social;
-  display: flex;
-  flex-direction: row;
-}
-
-
-#social-icons img{
-margin: 10px;
-mix-blend-mode: difference;
-filter: hue-rotate(210deg);
-} */
-/* fot the footer below section */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
 	line-height: 1.5;

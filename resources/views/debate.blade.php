@@ -1,19 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  
+
 <link rel="stylesheet" href="{{asset('cssfiles/debate.css')}}">
+</head>
+
+<body>
 @include('layout.navbar')
 <div class="wrapper">
 <div class="wrap1">
     <div class="movie_card" id="bright">
         <div class="info_section">
           <div class="movie_header">
-            <img class="locandina" src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg"/>
-            <h1>Bright</h1>
-            <h4>2017, David Ayer</h4>
+            <img class="locandina" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrRkTqTwXG5jT84beWIcokzKJyibiMVrP6dg&usqp=CAU"/>
+            <h1>Debate on Indian History</h1>
+            <h4>2017, by xyz</h4>
             <span class="minutes">117 min</span>
-            <p class="type">Action, Crime, Fantasy</p>
+            <p class="type">History, Geography</p>
           </div>
           <div class="movie_desc">
             <p class="text">
-              Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for. 
+              Discussion on Indian past time towards the events done and their impact on the present.
             </p>
           </div>
           <div class="movie_social">
@@ -30,15 +43,15 @@
       <div class="movie_card" id="tomb">
         <div class="info_section">
           <div class="movie_header">
-            <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg"/>
-            <h1>Tomb Raider</h1>
-            <h4>2018, Roar Uthaug</h4>
+            <img class="locandina" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkTHC3UknXEXswQIKlNgLy_13bdrSoWCXVkQ&usqp=CAU"/>
+            <h1>News Debate</h1>
+            <h4>2019,Judgement on SC</h4>
             <span class="minutes">125 min</span>
-            <p class="type">Action, Fantasy</p>
+            <p class="type">Law,  religon </p>
           </div>
           <div class="movie_desc">
             <p class="text">
-              Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, doloribus.
             </p>
           </div>
           <div class="movie_social">
@@ -55,15 +68,15 @@
       <div class="movie_card" id="ave">
         <div class="info_section">
           <div class="movie_header">
-            <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53715.jpg"/>
-            <h1>Black Panther</h1>
-            <h4>2018, Ryan Coogler</h4>
+            <img class="locandina" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScal-TrDqEymuprMfxxViTuwBGv1qRy1Ix1Q&usqp=CAU"/>
+            <h1>Debate</h1>
+            <h4>2018,By sadhguru</h4>
             <span class="minutes">134 min</span>
-            <p class="type">Action, Adventure, Sci-Fi</p>
+            <p class="type">Spirituality</p>
           </div>
           <div class="movie_desc">
             <p class="text">
-              T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel commodi repudiandae. Corrupti illo ex earum. Qui asperiores rerum dolore! 
             </p>
           </div>
           <div class="movie_social">
@@ -86,3 +99,7 @@
       
 </div>
 </div>
+{{-- @include('layout.footerbar') --}}
+
+</body>
+</html>
