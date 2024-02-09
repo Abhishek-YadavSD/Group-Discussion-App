@@ -43,11 +43,12 @@ Route::get('/log', function () {
 Route::view('/newuser','/pages/newuser')->name('newuser');
 
 // below for new user
-Route::get('/newuser/{name}', function($name) {
-    if ($name==null) {
-        return view("<h1>Name is not given</h1>");
-    }
+Route::get('/newuser/{name}', function() {
+    if($_GET['NAME']==null){
+        return "<h1>Email is not Entered</h1>";
+    }else{
     return view('pages/userprofile');
+    }
 });
 // above for new user login/signup
 
@@ -57,16 +58,18 @@ Route::get('/newuser/{name}', function($name) {
 
 // below for the routes which are unknown /not founded
 Route::fallback(function(){
-    return "<img src='https://freefrontend.com/assets/img/html-funny-404-pages/CodePen-404-Page.gif'>";
+    return view('404page');
 });
+
+
 // Route::get('/login', function () {
 //     return view('pages/newuser');
 // });
+
+
 Route::get('/login',[CustomAuthController::class,'login'])->name('newuser');
-
-
 Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
 
-// above for new user login/signup
+

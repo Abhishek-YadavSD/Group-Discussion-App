@@ -1,6 +1,4 @@
-<?php 
-    $username=$_GET['NAME'];
-    $usernumber=$_GET['PASSWORD'];
-    echo $username;
-    echo $usernumber;
-?>
+
+{{ $username=$_GET['NAME'];}}
+{{ $usernumber=$_GET['PASSWORD'];}}
+
