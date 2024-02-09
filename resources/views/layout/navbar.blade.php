@@ -1,4 +1,4 @@
-<html>
+
 <style>
     nav {
 	margin: 10px auto 8px;
@@ -93,6 +93,31 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 	color: #ffff;
 	transition: all .5s ease 0s;
 }
+@media only screen and (max-width: 600px) {
+	nav{
+	width: auto;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	}
+	a:nth-child(1) {
+	width: 19%;
+}
+a:nth-child(2) {
+	width:21%;
+}
+a:nth-child(3) {
+	width:19%;
+}
+a:nth-child(4) {
+	width:22%;
+}
+a:nth-child(5) {
+	width: 19%;
+}
+
+}
+
 /* 
 body {
 	font-size: 12px;
@@ -131,4 +156,3 @@ body {
 		document.querySelector('#logi').classList.add('newuser-active');
 	};
 </script>"!!}
-</html>
