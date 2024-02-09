@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CustomAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,11 @@ Route::get('/knowladge', function () {
 Route::get('/debate', function () {
     return view('debate');
 })->name('debate');
+
+Route::get('/log', function () {
+    return view('login');    
+});
+
 // login not in used as replaced by newuserp page
 // Route::get('/login', function () {
 //     return "<h1>Hello it is working</h1>";
@@ -53,3 +59,14 @@ Route::get('/newuser/{name}', function($name) {
 Route::fallback(function(){
     return "<img src='https://freefrontend.com/assets/img/html-funny-404-pages/CodePen-404-Page.gif'>";
 });
+// Route::get('/login', function () {
+//     return view('pages/newuser');
+// });
+Route::get('/login',[CustomAuthController::class,'login'])->name('newuser');
+
+
+Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
+Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
+Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
+
+// above for new user login/signup
