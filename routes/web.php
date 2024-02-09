@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CustomAuthController;
+// below is for contact page controller
+use App\Http\Controllers\contact;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +73,8 @@ Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name
 Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
 
 
+// route for contact page and offered services  page
+Route::get('/contact',[contact::class,'contactpage'])->name('contact');
+Route::get('/services',[contact::class,'services'])->name('services');
+
+// Route::get('/services/{name}',[contact::class,'services'])->name('services');
