@@ -37,11 +37,12 @@ Route::get('/debate', function () {
 Route::view('/newuser','/pages/newuser')->name('newuser');
 
 // below for new user
-Route::get('/newuser/{name}', function($name) {
-    if ($name==null) {
-        return view("<h1>Name is not given</h1>");
-    }
+Route::get('/newuser/{name}', function() {
+    if($_GET['NAME']==null){
+        return "<h1>Email is not Entered</h1>";
+    }else{
     return view('pages/userprofile');
+    }
 });
 // above for new user login/signup
 
