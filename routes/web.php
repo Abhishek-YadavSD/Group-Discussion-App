@@ -72,3 +72,7 @@ Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
 
 
 
+// below for test & learnin
+Route::get('/test', function () {
+    return view('testwork');
+});

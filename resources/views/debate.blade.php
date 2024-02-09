@@ -9,6 +9,9 @@
   
 
 <link rel="stylesheet" href="{{asset('cssfiles/debate.css')}}">
+
+<link rel="stylesheet" href="{{asset('cssfiles/navbar.css')}}">
+
 </head>
 
 <body>

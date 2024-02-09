@@ -8,6 +8,8 @@
 
 
 <link rel="stylesheet" href="{{asset('cssfiles/knowladge.css')}}">
+<link rel="stylesheet" href="{{asset('cssfiles/navbar.css')}}">
+
 </head>
 <body>
 

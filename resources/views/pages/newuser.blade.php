@@ -165,6 +165,7 @@
         }
     }
 </style>
+<link rel="stylesheet" href="{{asset('cssfiles/navbar.css')}}">
 @endsection
 
 @section('mainbody')
