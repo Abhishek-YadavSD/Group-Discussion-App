@@ -1,3 +1,4 @@
+<html>
 <style>
     nav {
 	margin: 10px auto 8px;
@@ -72,6 +73,26 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 	left: 470px;
 	background-color: #e67e22;
 }
+.groups-active{
+	color: #e74c3c;
+	transition: all .5s ease 0s;
+}
+.knowladge-active{
+	color: #3498db;
+	transition: all .5s ease 0s;
+}
+.debate-active{
+	color: #9b59b6;
+	transition: all .5s ease 0s;
+}
+.newuser-active{
+	color: #e67e22;
+	transition: all .5s ease 0s;
+}
+.groups-active:hover,.knowladge-active:hover,.debate-active:hover,.newuser-active:hover{
+	color: #ffff;
+	transition: all .5s ease 0s;
+}
 /* 
 body {
 	font-size: 12px;
@@ -83,11 +104,31 @@ body {
 
 
 </style>
+
 <nav>
 	<a class=".start-home" href='{{route('home')}}'>Home</a>
-	<a class=".start-about" href='{{route('groups')}}'>Groups</a>
-	<a class=".start-blog" href='{{route('knowladge')}}'>knowladge</a>
-	<a class=".start-portefolio" href='{{route('debate')}}'>Debate</a>
-	<a class=".start-contact" href='{{route('newuser')}}'>Login</a>
+	<a id="grps" class=".start-about" href='{{route('groups')}}'>Groups</a>
+	<a id="knwp" class=".start-blog" href='{{route('knowladge')}}'>knowladge</a>
+	<a id="debt" class=".start-portefolio" href='{{route('debate')}}'>Debate</a>
+	<a id="logi" class=".start-contact" href='{{route('newuser')}}'>Login</a>
 	<div class="animation start-home">hello</div>
 </nav>
+{!!"<script>
+	// console.log(window.location.href);
+	// console.log(window.location.href.includes('groups'));
+	// console.log(document.querySelector('#grps').innerText);
+
+	if(window.location.href.includes('groups')){
+		document.querySelector('#grps').classList.add('groups-active');
+	};
+	if(window.location.href.includes('knowladge')){
+		document.querySelector('#knwp').classList.add('knowladge-active');
+	};
+	if(window.location.href.includes('debate')){
+		document.querySelector('#debt').classList.add('debate-active');
+	};
+	if(window.location.href.includes('login')){
+		document.querySelector('#logi').classList.add('newuser-active');
+	};
+</script>"!!}
+</html>

@@ -31,9 +31,7 @@ Route::get('/debate', function () {
     return view('debate');
 })->name('debate');
 
-Route::get('/log', function () {
-    return view('login');    
-});
+
 
 // login not in used as replaced by newuserp page
 // Route::get('/login', function () {
