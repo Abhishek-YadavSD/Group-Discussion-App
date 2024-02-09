@@ -41,13 +41,13 @@ Route::get('/debate', function () {
 Route::view('/newuser','/pages/newuser')->name('newuser');
 
 // below for new user
-Route::get('/newuser/{name}', function() {
-    if($_GET['NAME']==null){
-        return "<h1>Email is not Entered</h1>";
-    }else{
-    return view('pages/userprofile');
-    }
-});
+// Route::get('/newuser/{name}', function() {
+//     if($_GET['NAME']==null){
+//         return "<h1>Email is not Entered</h1>";
+//     }else{
+//     return view('pages/userprofile');
+//     }
+// });
 // above for new user login/signup
 
 // below for redirecting if a route is changed use in
@@ -71,8 +71,3 @@ Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name
 Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
 
 
-
-// below for test & learnin
-Route::get('/test', function () {
-    return view('testwork');
-});
