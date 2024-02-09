@@ -71,3 +71,4 @@ Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name
 Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
 
 
+

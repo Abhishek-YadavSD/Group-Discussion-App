@@ -178,6 +178,12 @@
     <input id="account" name="radioaccount" type="radio" class="radio radio--invisible" />
     <div class="form_background">
         <form action="{{ route('login-user') }}" method="post">
+            {{-- @if (Session::has('success'))
+            <div class="alert alert-success">{{Session::get('success')}}</div>
+        @endif
+        @if (Session::has('fail'))
+        <div class="alert alert-danger">{{Session::get('fail')}}</div>
+    @endif --}}
             @csrf
             <div class="form-group form-group--account">
                 <h3 class="form-group_title">Log in</h3>
@@ -200,19 +206,14 @@
                 <button type="submit" class="button button--form">Log in</button>
             </div>
         </form>
-
         <form action="{{ route('register-user') }}" method="post" id="signupid"
             class="form-group form-group--noaccount">
-            @if (Session::has('success'))
-                <div class="alert alert-success">
-                  <strong>Success!</strong> Indicates a successful or positive action.
-                </div>
+            {{-- @if (Session::has('success'))
+                <div class="alert alert-success">{{Session::get('success')}}</div>
             @endif
             @if (Session::has('fail'))
-            <div class="alert alert-danger">
-              <strong>Fail!</strong> Indicates a failed or negative action.
-            </div>
-        @endif
+            <div class="alert alert-danger">{{Session::get('fail')}}</div>
+        @endif --}}
             @csrf
             <h3 class="form-group_title">Sign up</h3>
             <div>

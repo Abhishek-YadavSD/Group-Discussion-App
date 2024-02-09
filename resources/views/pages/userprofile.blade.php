@@ -1,28 +1,26 @@
 
-{{ $username=$_GET['NAME'];}}
-{{ $usernumber=$_GET['PASSWORD'];}}
-@if ($_GET['NAME'] == 'abhi@c.in')
-    {!!"<script>alert('Name is for abhishek')</script>"!!}
-@endif
-@php
-    $val=['abhi','abhishek','abhi yadav','I-abhi','etc'];
-@endphp
 
-<ul>
-@foreach ($val as $item)
+@extends('layout.main')
 
-{{-- @if ($loop->first)
-<li style="color: red">{{$loop->index}}-{{$item}}</li>
-@elseif($loop->last)
-<li style="color: blue">{{$loop->index}}-{{$item}}</li>
-@else
-<li>{{$loop->index}}-{{$item}}</li> --}}
-@if ($loop->even)
-<li style="color: red">{{$loop->index}}-{{$item}}</li>
-@elseif($loop->odd)
-<li style="color: blue">{{$loop->index}}-{{$item}}</li>
-    
-@endif
-    
-@endforeach
-</ul>
+@section('mainbody')
+<div class="container">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{$data->id}}</th>
+        <td>{{$data->name}}</td>
+        <td>{{$data->email}}</td>
+        <td> <a href="">Log In</a> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+@endsection

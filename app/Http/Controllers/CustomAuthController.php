@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use DB;
 use Hash;
+use Session;
 
 class CustomAuthController extends Controller
 {
@@ -20,7 +22,7 @@ class CustomAuthController extends Controller
             [
                 'name' =>'required',
                 'email' =>'required|email|unique:users',
-                'password'=>'required|min:5|min:12'
+                'password'=>'required'
                 // 'password_confirmation'=>'<PASSWORD>'
             ]
         );
@@ -44,11 +46,19 @@ class CustomAuthController extends Controller
         $request->validate(
             [
                 'email' =>'required|email',
-                'password'=>'required|min:5|min:12'
+                'password'=>'required'
                 // 'password_confirmation'=>'<PASSWORD>'
             ]
         );
         $user = User::where('email', '=', $request->email)->first();
+        
+        // $user = DB::table('users')
+        // ->where('email', '=', $request->email)
+        // ->where('password', '=', $request->password)
+        // ->first();
+
+        // dd($user);
+        
         if ($user) {
             if (Hash::check($request->password, $user->password)) {
                 $request->session()->put('loginId', $user->id);
@@ -62,8 +72,11 @@ class CustomAuthController extends Controller
         // return redirect()
             // return "hhhh"
     }
-
     public function dashboard(){
-        return "Welcome!! To dashboard";
+        if(Session::has('loginId')){
+            $data =User::where('id','=', Session::get('loginId'))->first();
+        }
+        return view('pages.userprofile', compact('data'));
+        
     }
 }
