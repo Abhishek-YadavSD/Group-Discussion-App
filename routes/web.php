@@ -72,9 +72,14 @@ Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('logi
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
 
+// group of all controller page under controller having classes
+Route::controller(contact::class)->group(function(){
+    Route::get('/contact','contactpage')->name('contact');
 
+    Route::get('/services','services')->name('services');
+});
 // route for contact page and offered services  page
-Route::get('/contact',[contact::class,'contactpage'])->name('contact');
-Route::get('/services',[contact::class,'services'])->name('services');
+// Route::get('/contact',[contact::class,'contactpage'])->name('contact');
+// Route::get('/services',[contact::class,'services'])->name('services');
 
 // Route::get('/services/{name}',[contact::class,'services'])->name('services');
