@@ -172,7 +172,6 @@
 @include('layout.navbar')
 
 {{-- <form action="{{ URL::to('/registe') }}" method="post" class="form"> --}}
-
 <div class="form">
     @csrf
     <input id="noaccount" name="radioaccount" type="radio" class="radio radio--invisible" checked />
@@ -191,7 +190,8 @@
                 <div>
                     <input class="form-group_input" type="email" name="email" placeholder="Email" />
                     <span class="text-danger">
-                        @error('email')
+                        @error('email')   
+                        {{-- @dd($message) --}}
                             {{ $message }}
                         @enderror
                     </span>

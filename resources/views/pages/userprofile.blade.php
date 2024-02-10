@@ -18,7 +18,7 @@
         <th scope="row">{{$data->id}}</th>
         <td>{{$data->name}}</td>
         <td>{{$data->email}}</td>
-        <td> <a href="">Log In</a> </td>
+        <td> <a href="logout">Log Out</a> </td>
       </tr>
     </tbody>
   </table>

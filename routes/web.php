@@ -71,11 +71,11 @@ Route::get('/login',[CustomAuthController::class,'login'])->name('newuser');
 Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
+Route::get('/logout',[CustomAuthController::class,'logout']);
 
 // group of all controller page under controller having classes
 Route::controller(contact::class)->group(function(){
     Route::get('/contact','contactpage')->name('contact');
-
     Route::get('/services','services')->name('services');
 });
 // route for contact page and offered services  page

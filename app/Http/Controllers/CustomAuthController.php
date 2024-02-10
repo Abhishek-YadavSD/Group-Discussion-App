@@ -79,4 +79,9 @@ class CustomAuthController extends Controller
         return view('pages.userprofile', compact('data'));
         
     }
+    
+    public function logout(){
+        Session::forget('loginId');
+        return redirect('login');
+    }
 }
